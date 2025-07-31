@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Link from 'next/link';
 
 // 页面头部组件 - 包含导航和标题
 const Header = () => {
@@ -77,7 +78,7 @@ const Header = () => {
             items-center /* 垂直居中 */
             space-x-8   /* 间距 */
           ">
-            <a href="#" className="
+            <Link href="/" className="
               text-gray-700   /* 字体颜色 */
               hover:text-blue-600 /* 悬停时颜色 */
               transition-colors /* 颜色过渡 */
@@ -85,8 +86,8 @@ const Header = () => {
               font-medium     /* 字体粗细 */
             ">
               首页
-            </a>
-            <a href="#" className="
+            </Link>
+            <Link href="/categories" className="
               text-gray-700   /* 字体颜色 */
               hover:text-blue-600 /* 悬停时颜色 */
               transition-colors /* 颜色过渡 */
@@ -94,8 +95,8 @@ const Header = () => {
               font-medium     /* 字体粗细 */
             ">
               分类
-            </a>
-            <a href="#" className="
+            </Link>
+            <Link href="/popular" className="
               text-gray-700   /* 字体颜色 */
               hover:text-blue-600 /* 悬停时颜色 */
               transition-colors /* 颜色过渡 */
@@ -103,8 +104,8 @@ const Header = () => {
               font-medium     /* 字体粗细 */
             ">
               热门
-            </a>
-            <a href="#" className="
+            </Link>
+            <Link href="/about" className="
               text-gray-700   /* 字体颜色 */
               hover:text-blue-600 /* 悬停时颜色 */
               transition-colors /* 颜色过渡 */
@@ -112,7 +113,7 @@ const Header = () => {
               font-medium     /* 字体粗细 */
             ">
               关于
-            </a>
+            </Link>
           </nav>
 
           {/* 移动端菜单按钮 */}

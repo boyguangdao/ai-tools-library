@@ -1,5 +1,8 @@
 import SupabaseTest from '../../components/SupabaseTest';
 
+// 禁用预渲染，因为需要客户端环境变量
+export const dynamic = 'force-dynamic';
+
 export default function TestSupabasePage() {
   return (
     <div className="min-h-screen bg-gray-50 py-8">

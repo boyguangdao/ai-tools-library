@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function SimpleTest() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-500 to-purple-600 p-8">
@@ -33,12 +35,12 @@ export default function SimpleTest() {
         </div>
         
         <div className="mt-8 text-center">
-          <a 
+          <Link 
             href="/" 
             className="inline-block px-8 py-4 bg-white text-blue-600 rounded-xl font-bold hover:bg-gray-100 transition-colors"
           >
             返回主页
-          </a>
+          </Link>
         </div>
       </div>
     </div>

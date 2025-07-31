@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Link from 'next/link';
 
 // 页面底部组件 - 包含版权信息和链接
 const Footer = () => {
@@ -90,7 +91,7 @@ const Footer = () => {
               space-y-2   /* 间距 */
             ">
               <li>
-                <a href="#" className="
+                <Link href="/" className="
                   text-gray-600   /* 字体颜色 */
                   hover:text-blue-600 /* 悬停时颜色 */
                   transition-colors /* 颜色过渡 */
@@ -98,10 +99,10 @@ const Footer = () => {
                   text-sm         /* 字体大小 */
                 ">
                   首页
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="
+                <Link href="/categories" className="
                   text-gray-600   /* 字体颜色 */
                   hover:text-blue-600 /* 悬停时颜色 */
                   transition-colors /* 颜色过渡 */
@@ -109,10 +110,10 @@ const Footer = () => {
                   text-sm         /* 字体大小 */
                 ">
                   工具分类
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="
+                <Link href="/popular" className="
                   text-gray-600   /* 字体颜色 */
                   hover:text-blue-600 /* 悬停时颜色 */
                   transition-colors /* 颜色过渡 */
@@ -120,10 +121,10 @@ const Footer = () => {
                   text-sm         /* 字体大小 */
                 ">
                   热门工具
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="
+                <Link href="/about" className="
                   text-gray-600   /* 字体颜色 */
                   hover:text-blue-600 /* 悬停时颜色 */
                   transition-colors /* 颜色过渡 */
@@ -131,7 +132,7 @@ const Footer = () => {
                   text-sm         /* 字体大小 */
                 ">
                   关于我们
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -152,7 +153,7 @@ const Footer = () => {
               space-y-2   /* 间距 */
             ">
               <li>
-                <a href="#" className="
+                <Link href="/feedback" className="
                   text-gray-600   /* 字体颜色 */
                   hover:text-blue-600 /* 悬停时颜色 */
                   transition-colors /* 颜色过渡 */
@@ -160,10 +161,10 @@ const Footer = () => {
                   text-sm         /* 字体大小 */
                 ">
                   意见反馈
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="
+                <Link href="/submit" className="
                   text-gray-600   /* 字体颜色 */
                   hover:text-blue-600 /* 悬停时颜色 */
                   transition-colors /* 颜色过渡 */
@@ -171,10 +172,10 @@ const Footer = () => {
                   text-sm         /* 字体大小 */
                 ">
                   提交工具
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="
+                <Link href="/partners" className="
                   text-gray-600   /* 字体颜色 */
                   hover:text-blue-600 /* 悬停时颜色 */
                   transition-colors /* 颜色过渡 */
@@ -182,7 +183,7 @@ const Footer = () => {
                   text-sm         /* 字体大小 */
                 ">
                   合作伙伴
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -213,7 +214,7 @@ const Footer = () => {
             flex          /* 弹性布局 */
             space-x-6     /* 间距 */
           ">
-            <a href="#" className="
+            <Link href="/privacy" className="
               text-gray-400   /* 字体颜色 */
               hover:text-gray-600 /* 悬停时颜色 */
               transition-colors /* 颜色过渡 */
@@ -226,8 +227,8 @@ const Footer = () => {
               " fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
               </svg>
-            </a>
-            <a href="#" className="
+            </Link>
+            <Link href="/terms" className="
               text-gray-400   /* 字体颜色 */
               hover:text-gray-600 /* 悬停时颜色 */
               transition-colors /* 颜色过渡 */
@@ -240,7 +241,7 @@ const Footer = () => {
               " fill="currentColor" viewBox="0 0 20 20">
                 <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -5,8 +5,14 @@ import AITool from '../types/AITool';
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
-// 创建Supabase客户端
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+// 创建Supabase客户端（仅在客户端）
+let supabase = null;
+
+if (typeof window !== 'undefined' && supabaseUrl && supabaseAnonKey) {
+  supabase = createClient(supabaseUrl, supabaseAnonKey);
+}
+
+export { supabase };
 
 // AI工具数据库服务
 export class AIToolService {
@@ -14,9 +20,17 @@ export class AIToolService {
     this.tableName = 'ai_tools';
   }
 
+  // 检查Supabase是否可用
+  checkSupabase() {
+    if (!supabase) {
+      throw new Error('Supabase客户端未初始化，请检查环境变量配置');
+    }
+  }
+
   // 获取所有AI工具
   async getAllTools() {
     try {
+      this.checkSupabase();
       const { data, error } = await supabase
         .from(this.tableName)
         .select('*')
